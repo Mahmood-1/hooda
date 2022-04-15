@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".EditingBook">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:text="Edit Book"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editNameBook"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="1dp"
+        android:background="@drawable/back"
+        android:hint="Book name"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editNameAuthor"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/back"
+        android:hint="Book author"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editLaunchYear"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/back"
+        android:hint="Launch year"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editPrice"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/back"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/editBookCover"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/cloud_upload" />
+
+    <RatingBar
+        android:id="@+id/editRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:progressTint="@color/backcolor"
+        android:rating="0.0"
+        android:stepSize="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/editBook"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:backgroundTint="@color/backcolor"
+        android:text="EDIT BOOK"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/deleteBook"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-15dp"
+        android:backgroundTint="@color/pinkColor"
+        android:text="DELETE BOOK"
+        android:textColor="@color/white" />
+</LinearLayout>
